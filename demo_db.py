@@ -10,7 +10,7 @@ connect = connect(host="localhost",
                   cursorclass=pymysql.cursors.DictCursor #для возможно работ с табл из словоря
                   )
 def update(cur):
-    info = input("Введите наименование товара и новую стоимость через пробел\n").split(" ")
+    info = input("Введитеqqqqw11 наименование товара и новую стоимость через пробел\n").split(" ")
     sql = f"UPDATE goods SET price = {int(info[1])} WHERE title = '{info[0]}'"
     if cur.execute(sql) > 0:
         print("Обновлено")
